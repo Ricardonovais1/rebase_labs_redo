@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-font: 'Raleway', sans-serif;
+  --primary-color: #d31245;
+  --light-color: #ffeef3;
+  --grey-color: #f8f8f8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  margin-bottom: 2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topnav {
+  display: flex;
+  width: 100%;
+  background-color: var(--light-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  padding-left: 12px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  padding-left: .4rem;
+  padding-right: .4rem;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.title {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.search-message {
+  margin-top: .6rem;
+  margin-right: .8rem;
+}
+
+.search-container p {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  margin-left: .5rem;
+}
+
+
+.import-csv {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  margin-bottom: -0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: .3rem;
+  font-size: 1rem;
+  color: var(--light-color);
+}
+
+.exams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exam-link {
+  margin-bottom: .8rem;
+  width: 90%;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  padding-left: 1rem;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}

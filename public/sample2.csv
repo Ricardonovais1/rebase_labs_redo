@@ -1,0 +1,14 @@
+cpf;nome paciente;email paciente;data nascimento paciente;endereço/rua paciente;cidade paciente;estado patiente;crm médico;crm médico estado;nome médico;email médico;token resultado exame;data exame;tipo exame;limites tipo exame;resultado tipo exame
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;hemácias;45-52;52
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;leucócitos;9-61;71
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;plaquetas;11-93;57
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;hdl;19-75;15
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;ldl;45-54;14
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;vldl;48-72;93
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;glicemia;25-83;84
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;tgo;50-84;61
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;tgp;38-63;50
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;eletrólitos;2-68;98
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;tsh;25-80;28
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;t4-livre;34-60;45
+077.877.076-15;Dra. Marcela de Lara;natividad@adams-mohr.com;1974-06-24;8566 Viela José Resende;Unistalda;Goiás;B000AR99QO;MS;Oliver Palmeira;lawana.erdman@waters.info;EO1IFX;2022-02-11;ácido úrico;15-61;91

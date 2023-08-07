@@ -1,0 +1,62 @@
+require 'pg'
+require 'json'
+
+
+module TestsAll
+  def self.get_all_tests
+    pg_conn = PG.connect(host: 'postgres-redo', user: 'admin', password: 'password', dbname: 'rebase_redo')
+
+    results = pg_conn.exec("
+      SELECT
+
+        tests.id AS test_id,
+        patients.cpf AS patient_cpf,
+        patients.name AS patient_name,
+        patients.email AS patient_email,
+        patients.birthday AS patient_birthday,
+        patients.address AS patient_address,
+        patients.city AS patient_city,
+        patients.state AS patient_state,
+        doctors.name AS doctor_name,
+        doctors.crm AS doctor_crm,
+        doctors.crm_state AS doctor_crm_state,
+        doctors.email AS doctor_email,
+        exams.token AS exam_token,
+        exams.result_date AS exam_result_date,
+        tests.test_type AS test_type,
+        tests.limits AS test_limits,
+        tests.result AS test_result
+
+      FROM tests
+
+      JOIN exams ON tests.token_id = exams.token
+      JOIN patients ON exams.patient_id = patients.id
+      JOIN doctors ON exams.doctor_id = doctors.id;
+
+    ")
+
+    individual_tests = results.map do |row|
+      {
+        id: row['test_id'],
+        cpf: row['patient_cpf'],
+        'nome paciente': row['patient_name'],
+        'email paciente': row['patient_email'],
+        'data nascimento paciente': row['patient_birthday'],
+        'endereço/rua paciente': row['patient_address'],
+        'cidade paciente': row['patient_city'],
+        'estado paciente': row['patient_state'],
+        'nome médico': row['doctor_name'],
+        'crm médico': row['doctor_crm'],
+        'crm médico estado': row['doctor_crm_state'],
+        'email médico': row['doctor_email'],
+        'token resultado exame': row['exam_token'],
+        'data exame': row['exam_result_date'],
+        'tipo exame': row['test_type'],
+        'limites tipo exame': row['test_limits'],
+        'resultado': row['test_result']
+      }
+    end
+
+    individual_tests.to_json
+  end
+end

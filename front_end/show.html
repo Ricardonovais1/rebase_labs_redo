@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/show.css" % />
+
+    <title>Rebase Labs Exames - Show - Feature 3</title>
+  </head>
+  <header>
+    <div class="topnav">
+      <h2 class="title-details">Detalhes do exame {%exam.token%}</h2>
+      <a href="http://localhost:3000/exams">Voltar</a>
+    </div>
+  </header>
+  <body>
+    <div class="exams">
+      <div class="exam-data">
+        <h3 class="patient-data-title">Dados do paciente:</h3>
+        <table>
+          <tr>
+            <th>Nome</th>
+            <th>Cpf</th>
+            <th>Email</th>
+            <th>Nascimento</th>
+            <th>Endereço</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+          </tr>
+          <tr>
+            <td>{%patient.name%}</td>
+            <td>{%patient.cpf%}</td>
+            <td>{%patient.email%}</td>
+            <td>{%patient.birthday%}</td>
+            <td>{%patient.address%}</td>
+            <td>{%patient.city%}</td>
+            <td>{%patient.state%}</td>
+          </tr>
+        </table>
+        <h3 class="doctor-data-title">Médico responsável:</h3>
+        <table>
+          <tr>
+            <th>Nome</th>
+            <th>Crm</th>
+            <th>Crm estado</th>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td>{%doctor.name%}</td>
+            <td>{%doctor.crm%}</td>
+            <td>{%doctor.crm_state%}</td>
+            <td>{%doctor.email%}</td>
+          </tr>
+        </table>
+        <h3 class="results-data-title">Resultados do exame:</h3>
+        <table>
+          <tr>
+            <th>Categoria</th>
+            <th>Limites</th>
+            <th>Resultado</th>
+          </tr>
+          <tr>
+            <td>Hemácias</td>
+            <td>{%hemacias.limits%}</td>
+            <td>{%hemacias.result%}</td>
+          </tr>
+          <tr>
+            <td>Leucócitos</td>
+            <td>{%leucocitos.limits%}</td>
+            <td>{%leucocitos.result%}</td>
+          </tr>
+          <tr>
+            <td>Plaquetas</td>
+            <td>{%plaquetas.limits%}</td>
+            <td>{%plaquetas.result%}</td>
+          </tr>
+          <tr>
+            <td>Hdl</td>
+            <td>{%hdl.limits%}</td>
+            <td>{%hdl.result%}</td>
+          </tr>
+          <tr>
+            <td>Ldl</td>
+            <td>{%ldl.limits%}</td>
+            <td>{%ldl.result%}</td>
+          </tr>
+          <tr>
+            <td>Vldl</td>
+            <td>{%vldl.limits%}</td>
+            <td>{%vldl.result%}</td>
+          </tr>
+          <tr>
+            <td>Glicemia</td>
+            <td>{%glicemia.limits%}</td>
+            <td>{%glicemia.result%}</td>
+          </tr>
+          <tr>
+            <td>Tgo</td>
+            <td>{%tgo.limits%}</td>
+            <td>{%tgo.result%}</td>
+          </tr>
+          <tr>
+            <td>Tgp</td>
+            <td>{%tgp.limits%}</td>
+            <td>{%tgp.result%}</td>
+          </tr>
+          <tr>
+            <td>Eletrólitos</td>
+            <td>{%eletrolitos.limits%}</td>
+            <td>{%eletrolitos.result%}</td>
+          </tr>
+          <tr>
+            <td>Tsh</td>
+            <td>{%tsh.limits%}</td>
+            <td>{%tsh.result%}</td>
+          </tr>
+          <tr>
+            <td>T4-livre</td>
+            <td>{%t4-livre.limits%}</td>
+            <td>{%t4-livre.result%}</td>
+          </tr>
+          <tr>
+            <td>Ácido úrico</td>
+            <td>{%acido_urico.limits%}</td>
+            <td>{%acido_urico.result%}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <p id="parag" style="color: black"></p>
+  </body>
+</html>
